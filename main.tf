@@ -47,7 +47,7 @@ resource "azurerm_linux_web_app" "webapp" {
     minimum_tls_version = "1.2"
     application_stack {
       docker_registry_url = "https://mcr.microsoft.com"
-      docker_image_name   = "azure-app-service/samples/aspnethelloworld:latest"
+      docker_image_name   = "dotnet/samples:latest"
     }
   }
 
