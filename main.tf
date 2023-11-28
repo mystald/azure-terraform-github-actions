@@ -46,8 +46,8 @@ resource "azurerm_linux_web_app" "webapp" {
   site_config {
     minimum_tls_version = "1.2"
     application_stack {
-      docker_registry_url = "https://mcr.microsoft.com"
-      docker_image_name   = "dotnet/samples:dotnetapp-alpine-amd64"
+      docker_registry_url = "https://docker.io"
+      docker_image_name   = "nginx:latest"
     }
   }
 
